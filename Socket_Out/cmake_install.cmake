@@ -1,4 +1,4 @@
-# Install script for directory: /home/enis/Documents/cpp_socket_testing
+# Install script for directory: /home/enis/Documents/cpp_socket_testing/Socket_Out
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/enis/Documents/cpp_socket_testing/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/enis/Documents/cpp_socket_testing/Socket_Out/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

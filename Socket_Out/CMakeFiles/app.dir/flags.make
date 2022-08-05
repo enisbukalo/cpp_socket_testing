@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/enis/Documents/cpp_socket_testing
+CXX_INCLUDES = -I/home/enis/Documents/cpp_socket_testing/Socket_Out
 
 CXX_FLAGS = 
 
