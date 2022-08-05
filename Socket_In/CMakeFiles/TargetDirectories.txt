@@ -1,3 +1,0 @@
-/home/enis/Documents/cpp_socket_testing/CMakeFiles/app.dir
-/home/enis/Documents/cpp_socket_testing/CMakeFiles/edit_cache.dir
-/home/enis/Documents/cpp_socket_testing/CMakeFiles/rebuild_cache.dir
