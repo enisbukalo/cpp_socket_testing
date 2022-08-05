@@ -1,0 +1,9 @@
+#Folders
+build/
+CMakeFiles/
+.vscode/
+
+#Files
+app
+cmake_install.cmake
+null.d
