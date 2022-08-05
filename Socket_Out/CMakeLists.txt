@@ -6,4 +6,4 @@ set(SOURCES src/main.cpp)
 project(Socket_Testing)
 
 include_directories(${PROJECT_SOURCE_DIR})
-add_executable(app ${SOURCES})  # be sure there's exactly one main() function in the source files
+add_executable(app ${SOURCES}) 
