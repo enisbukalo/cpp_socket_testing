@@ -145,7 +145,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Socket_Testing
+CMAKE_PROJECT_NAME:STATIC=Server
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -203,11 +203,23 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 //Path to a program.
 CMAKE_STRIP:FILEPATH=/usr/bin/strip
 
+//No help, variable specified on the command line.
+CMAKE_TOOLCHAIN_FILE:UNINITIALIZED=~/user/gcc-arm-linux-gnueabihf
+
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
 // during the make.  This is useful for debugging only. With Visual
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
+
+//Value Computed by CMake
+Server_BINARY_DIR:STATIC=/home/enis/Documents/cpp_socket_testing/Server
+
+//Value Computed by CMake
+Server_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+Server_SOURCE_DIR:STATIC=/home/enis/Documents/cpp_socket_testing/Server
 
 //Value Computed by CMake
 Socket_Testing_BINARY_DIR:STATIC=/home/enis/Documents/cpp_socket_testing/Server
