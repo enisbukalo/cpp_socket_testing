@@ -10,7 +10,7 @@
 int main()
 {
     //TODO CREATE CLASS
-    
+
     // Create socket
     int listening = socket(AF_INET, SOCK_STREAM, 0);
     if (listening == -1)
@@ -50,6 +50,7 @@ int main()
     char host[NI_MAXHOST];
     char svc[NI_MAXSERV];
 
+    // This is where we await a connection on socket params
     int clientSocket = accept(listening, (sockaddr *)&client, &clientSize);
 
     if (clientSocket == -1)
