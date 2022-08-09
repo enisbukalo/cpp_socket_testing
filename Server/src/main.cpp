@@ -10,6 +10,8 @@
 int main()
 {
     //TODO CREATE CLASS
+    //TODO CREATE SERVER LOOP THREAD
+    //TODO CREATE FIFO QUEUE FOR SERVER MESSAGES
 
     // Create socket
     int listening = socket(AF_INET, SOCK_STREAM, 0);
