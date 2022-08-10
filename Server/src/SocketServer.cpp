@@ -8,7 +8,7 @@ void SocketServer::startServer()
 {
 }
 
-void SocketServer::serverLoop()
+int SocketServer::serverLoop()
 {
 }
 

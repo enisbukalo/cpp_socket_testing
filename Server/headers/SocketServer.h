@@ -32,7 +32,7 @@ class SocketServer
         std::string messageIn;
     public:
         void startServer();
-        void serverLoop();
+        int serverLoop();
         void stopServer();
         SocketServer();
         ~SocketServer();

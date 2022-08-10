@@ -1,7 +1,11 @@
 cmake_minimum_required(VERSION 3.10)
 
 set(CMAKE_CXX_STANDARD 17)
-set(SOURCES src/main.cpp src/SocketServer.cpp src/MessageQueue.cpp)
+set(SOURCES
+    src/main.cpp
+    src/SocketServer.cpp
+    src/MessageQueue.cpp
+    src/ErrorHandler.cpp)
 
 project(Server)
 
