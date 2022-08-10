@@ -12,23 +12,19 @@ void SocketServer::serverLoop()
 {
 }
 
-void SocketServer::createSocket()
+int SocketServer::createSocket()
 {
 }
 
-void SocketServer::bindSocket()
+int SocketServer::bindSocket()
 {
 }
 
-void SocketServer::markListening()
+int SocketServer::markListening()
 {
 }
 
-void SocketServer::acceptCall()
-{
-}
-
-void SocketServer::waitConnection()
+int SocketServer::waitConnection()
 {
 }
 
