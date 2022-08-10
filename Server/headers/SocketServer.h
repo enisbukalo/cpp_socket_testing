@@ -17,8 +17,8 @@ class SocketServer
         int bindSocket();
         int markListening();
         int waitConnection();
-        void closeListening();
-        void closeSocket();
+        void parseIncoming();
+        void closeSocket(int);
 
         int listeningSocket;
         std::string socketNumber;
@@ -26,7 +26,7 @@ class SocketServer
         sockaddr_in clientIn;
         static constexpr socklen_t clientSize = sizeof(clientIn);
         char host[NI_MAXHOST];
-        char host[NI_MAXSERV];
+        char service[NI_MAXSERV];
         int clientSocket;
         char messageBuffer[4096];
         std::string messageIn;

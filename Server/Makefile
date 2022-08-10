@@ -129,6 +129,78 @@ app/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/build
 .PHONY : app/fast
 
+src/ErrorHandler.o: src/ErrorHandler.cpp.o
+.PHONY : src/ErrorHandler.o
+
+# target to build an object file
+src/ErrorHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/ErrorHandler.cpp.o
+.PHONY : src/ErrorHandler.cpp.o
+
+src/ErrorHandler.i: src/ErrorHandler.cpp.i
+.PHONY : src/ErrorHandler.i
+
+# target to preprocess a source file
+src/ErrorHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/ErrorHandler.cpp.i
+.PHONY : src/ErrorHandler.cpp.i
+
+src/ErrorHandler.s: src/ErrorHandler.cpp.s
+.PHONY : src/ErrorHandler.s
+
+# target to generate assembly for a file
+src/ErrorHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/ErrorHandler.cpp.s
+.PHONY : src/ErrorHandler.cpp.s
+
+src/MessageQueue.o: src/MessageQueue.cpp.o
+.PHONY : src/MessageQueue.o
+
+# target to build an object file
+src/MessageQueue.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/MessageQueue.cpp.o
+.PHONY : src/MessageQueue.cpp.o
+
+src/MessageQueue.i: src/MessageQueue.cpp.i
+.PHONY : src/MessageQueue.i
+
+# target to preprocess a source file
+src/MessageQueue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/MessageQueue.cpp.i
+.PHONY : src/MessageQueue.cpp.i
+
+src/MessageQueue.s: src/MessageQueue.cpp.s
+.PHONY : src/MessageQueue.s
+
+# target to generate assembly for a file
+src/MessageQueue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/MessageQueue.cpp.s
+.PHONY : src/MessageQueue.cpp.s
+
+src/SocketServer.o: src/SocketServer.cpp.o
+.PHONY : src/SocketServer.o
+
+# target to build an object file
+src/SocketServer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/SocketServer.cpp.o
+.PHONY : src/SocketServer.cpp.o
+
+src/SocketServer.i: src/SocketServer.cpp.i
+.PHONY : src/SocketServer.i
+
+# target to preprocess a source file
+src/SocketServer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/SocketServer.cpp.i
+.PHONY : src/SocketServer.cpp.i
+
+src/SocketServer.s: src/SocketServer.cpp.s
+.PHONY : src/SocketServer.s
+
+# target to generate assembly for a file
+src/SocketServer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/SocketServer.cpp.s
+.PHONY : src/SocketServer.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -162,6 +234,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... app"
+	@echo "... src/ErrorHandler.o"
+	@echo "... src/ErrorHandler.i"
+	@echo "... src/ErrorHandler.s"
+	@echo "... src/MessageQueue.o"
+	@echo "... src/MessageQueue.i"
+	@echo "... src/MessageQueue.s"
+	@echo "... src/SocketServer.o"
+	@echo "... src/SocketServer.i"
+	@echo "... src/SocketServer.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
