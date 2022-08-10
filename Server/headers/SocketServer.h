@@ -24,7 +24,7 @@ class SocketServer
         std::string socketNumber;
         sockaddr_in hint;
         sockaddr_in clientIn;
-        static constexpr socklen_t clientSize = sizeof(clientIn);
+        socklen_t clientSize = sizeof(clientIn);
         char host[NI_MAXHOST];
         char service[NI_MAXSERV];
         int clientSocket;

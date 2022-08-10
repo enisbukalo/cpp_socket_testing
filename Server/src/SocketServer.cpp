@@ -14,10 +14,12 @@ SocketServer::SocketServer()
 
 void SocketServer::startServer()
 {
+    int w = serverLoop();
 }
 
 int SocketServer::serverLoop()
 {
+    std::cout << "Starting Server Loop" << std::endl;
     listeningSocket = createSocket();
     int x = bindSocket();
     int y = markListening();
@@ -30,11 +32,14 @@ int SocketServer::serverLoop()
 
 int SocketServer::createSocket()
 {
+    std::cout << "Creating Socket" << std::endl;
     return socket(AF_INET, SOCK_STREAM, 0);
 }
 
 int SocketServer::bindSocket()
 {
+    std::cout << "Binding Socket" << std::endl;
+
     hint.sin_family = AF_INET;
     hint.sin_port = htons(std::stoi(socketNumber));
     inet_pton(AF_INET, "0.0.0.0", &hint.sin_addr);
@@ -43,16 +48,19 @@ int SocketServer::bindSocket()
 
 int SocketServer::markListening()
 {
+    std::cout << "Marking Socket For Listening" << std::endl;
     return listen(listeningSocket, SOMAXCONN);
 }
 
 int SocketServer::waitConnection()
 {
-    return accept(listeningSocket, (sockaddr *)&clientIn, (socklen_t *)&clientSize);
+    std::cout << "Waiting For Connection In" << std::endl;
+    return accept(listeningSocket, (sockaddr *)&clientIn, &clientSize);
 }
 
 void SocketServer::parseIncoming()
 {
+    std::cout << "Parsing Incoming Messages" << std::endl;
     memset(host, 0, NI_MAXHOST);
     memset(service, 0, NI_MAXSERV);
 
@@ -82,11 +90,13 @@ void SocketServer::parseIncoming()
 
 void SocketServer::closeSocket(int socketIn)
 {
+    std::cout << "Closing Socket" << std::endl;
     close(socketIn);
 }
 
 void SocketServer::stopServer()
 {
+    std::cout << "Stopping Server" << std::endl;
 }
 
 SocketServer::~SocketServer()
