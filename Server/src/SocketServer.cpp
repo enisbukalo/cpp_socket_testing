@@ -14,11 +14,17 @@ SocketServer::SocketServer()
 
 void SocketServer::startServer()
 {
-    listeningSocket = createSocket();
 }
 
 int SocketServer::serverLoop()
 {
+    listeningSocket = createSocket();
+    int x = bindSocket();
+    int y = markListening();
+    clientSocket = waitConnection();
+    close(listeningSocket);
+    parseIncoming();
+    close(clientSocket);
     return 0;
 }
 
@@ -42,8 +48,7 @@ int SocketServer::markListening()
 
 int SocketServer::waitConnection()
 {
-    clientSocket = accept(listeningSocket, (sockaddr *)&clientIn, (socklen_t *)&clientSize);
-
+    return accept(listeningSocket, (sockaddr *)&clientIn, (socklen_t *)&clientSize);
 }
 
 void SocketServer::parseIncoming()
