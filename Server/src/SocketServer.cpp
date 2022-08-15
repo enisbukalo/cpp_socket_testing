@@ -3,7 +3,8 @@
 SocketServer::SocketServer()
 {
     std::cout << "Socket Server Constructor" << std::endl;
-    socketNumber = std::getenv("server_socket");
+    socketNumber.clear();
+    socketNumber = std::getenv("SOCKET_SERVER");
     if (!socketNumber.empty()){
         std::cout << "Socket Number: " << socketNumber << std::endl;
     }
