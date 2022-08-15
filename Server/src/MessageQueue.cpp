@@ -2,6 +2,7 @@
 
 MessageQueue::MessageQueue()
 {  
+    
 }
 
 MessageQueue::~MessageQueue()
