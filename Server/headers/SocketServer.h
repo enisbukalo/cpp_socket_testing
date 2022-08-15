@@ -10,6 +10,8 @@
 #include <string.h>
 #include <string>
 
+#include "MessageQueue.h"
+
 class SocketServer
 {
     private:
@@ -30,6 +32,7 @@ class SocketServer
         int clientSocket;
         char messageBuffer[4096];
         std::string messageIn;
+        MessageQueue messageQueue;
     public:
         void startServer();
         int serverLoop();
