@@ -2,10 +2,10 @@
 
 SocketServer::SocketServer()
 {
-    std::cout << "Socket Server Constructor" << std::endl;
     socketNumber.clear();
-    char* ss = std::getenv("SERVER_SOCKET");
+    char* ss = std::getenv("SOCKET_SERVER");
     socketNumber = (ss == nullptr) ? "" : ss;
+    
     if (!socketNumber.empty()){
         std::cout << "Socket Number: " << socketNumber << std::endl;
     }
@@ -13,7 +13,6 @@ SocketServer::SocketServer()
         std::cerr << "Env variable 'SOCKET_SERVER' doesn't exist. Make sure it is set." << std::endl; 
         exit(0);
     }
-    std::cout << "End of server constr" << std::endl;
 }
 
 void SocketServer::startServer()
