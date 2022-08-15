@@ -20,8 +20,7 @@ void SocketServer::startServer()
 int SocketServer::serverLoop()
 {
     //TODO Handle Errors Coming Back As -1.
-    //TODO How to handle errors back to the main thread?
-    //  This class will be operating in a separate thread.
+    //TODO Need to add in conditional Var for multi-Threaded comms?
     std::cout << "Starting Server Loop" << std::endl;
     listeningSocket = createSocket();
     int x = bindSocket();
