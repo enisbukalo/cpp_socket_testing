@@ -4,7 +4,8 @@ SocketServer::SocketServer()
 {
     std::cout << "Socket Server Constructor" << std::endl;
     socketNumber.clear();
-    socketNumber = std::getenv("SOCKET_SERVER");
+    char* ss = std::getenv("SERVER_SOCKET");
+    socketNumber = (ss == nullptr) ? "" : ss;
     if (!socketNumber.empty()){
         std::cout << "Socket Number: " << socketNumber << std::endl;
     }
