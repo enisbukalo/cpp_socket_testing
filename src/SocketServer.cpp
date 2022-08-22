@@ -65,6 +65,7 @@ int SocketServer::waitConnection()
 
 void SocketServer::parseIncoming()
 {
+    //TODO Need to add connection to queue.
     std::cout << "Parsing Incoming Messages" << std::endl;
     memset(host, 0, NI_MAXHOST);
     memset(service, 0, NI_MAXSERV);
